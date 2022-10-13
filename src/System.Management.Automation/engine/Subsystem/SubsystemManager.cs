@@ -57,6 +57,10 @@ namespace System.Management.Automation.Subsystem
 
             // Register built-in suggestion providers.
             RegisterSubsystem(SubsystemKind.FeedbackProvider, new GeneralCommandErrorFeedback());
+
+            var unixCmdNotFound = new UnixCommandNotFound();
+            RegisterSubsystem(SubsystemKind.FeedbackProvider, unixCmdNotFound);
+            RegisterSubsystem(SubsystemKind.CommandPredictor, unixCmdNotFound);
         }
 
         #region internal - Retrieve subsystem proxy object
