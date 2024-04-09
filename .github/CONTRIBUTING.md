@@ -1,4 +1,4 @@
-# Contributing to PowerShell
+ch# Contributing to PowerShell
 
 We welcome and appreciate contributions from the community.
 There are many ways to become involved with PowerShell:
